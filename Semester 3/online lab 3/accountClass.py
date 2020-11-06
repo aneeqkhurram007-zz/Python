@@ -1,4 +1,4 @@
-'''class Account:
+class account:
     def __init__(self, name, balance):
         print("Your current balance is: "+str(balance))
         self.__name = name
@@ -20,7 +20,7 @@
         while True:
             print("Press 1 for Cash Deposit")
             print("Press 2 for Cash WithDraw")
-            print("Press 3 for Cash Current Balance")
+            print("Press 3 for Current Balance")
             print("Press 4 for Exit")
             choice = int(input("Enter your choice: "))
             if choice == 1:
@@ -32,11 +32,12 @@
             elif choice == 3:
                 self.accountInfo()
 
-            else:'''
+            else:
+                break
 
-from accountClass import accountClass, account
-account1 = accountClass()
-account1.printInfo()
-account = account("Aneeq", 50000)
-account._Account__balance = 10000  # accessing private attributes
-account.display()
+
+class accountClass:  # checking for multiple classes in a single file
+    def printInfo(self):
+        print("How you Doin")
+        pass
+    pass
